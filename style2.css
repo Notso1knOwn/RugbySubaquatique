@@ -1,0 +1,240 @@
+/* Page de Dylan */
+
+/* Dans l'ensemble ce css est le même que le premier et ce car après que la reflection du premier est terminé et effectué
+cela est beaucoup plus rapide.
+Les seules différences se retrouvent dans le fait de définr des floats dans tous les éléments d'une div */
+body
+{
+	background-color: #ECECEC;
+	font-family: "Open Sans";
+}
+
+p
+{
+		text-align: justify;
+}
+
+.btnv {
+  list-style-type: none;
+	right: 0;
+	margin-right: 60px;
+	margin-top: 16%;
+	text-align: right;
+  width: 100px;
+  background-color: none;
+	position:fixed;
+	animation: 3s Text;
+}
+
+.btnv>li a::before
+{
+	content: "";
+	position: fixed;
+	background: none;
+	width: 20px;
+	height: 20px;
+	right: 0;
+	margin-right: 20px;
+	border-radius: 50px;
+	border: 3px solid black;
+}
+
+/* Ici le code est redondant ce qui est problématique mais il permet
+d'afficher le texte quand le curseur est sur un bouton ou sur la box
+du texte qui est pas visible */
+.buttonrond1>span{
+	display: none;
+}
+.buttonrond1:hover>span{
+	display: block;
+}
+
+.buttonrond2>span{
+	display: none;
+}
+.buttonrond2:hover>span{
+	display: block;
+}
+
+.buttonrond3>span{
+	display: none;
+}
+.buttonrond3:hover>span{
+	display: block;
+}
+
+.buttonrond4>span{
+	display: none;
+}
+.buttonrond4:hover>span{
+	display: block;
+}
+
+.btnv>li a {
+	font-weight: bold;
+	font-family: 'Open Sans';
+  display: block;
+  color: #000;
+  padding: 20px 0;
+  text-decoration: none;
+}
+
+/* Ici on effectue des changements similaires au survol que les bouttons avec la balise
+balise boutton pour être en accord avec leur fonction identique */
+.btnv>li a:hover {
+	background-image: url("Wallpapers/imagefont.jpg");
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+
+
+
+/* on va définir les propriétés du titre réglement */
+#Réglement
+{
+	width: 180px;
+	margin: 0 auto;
+	font-size: 2em;
+	text-align: center;
+	background-image: url("Wallpapers/imagefont.jpg");
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.all2
+{
+	width: 1150px;
+	height: auto;
+	margin: 100px auto;
+}
+
+/* Ici on s'attaque a la 1ère boxtext du règlement avec des propriété sensiblement
+semblable aux autres boxtext */
+.boxtext3
+{
+	width: 49%;
+	height: auto;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.boxtext3>h2
+{
+	margin-top: 50px;
+}
+
+.i1
+{
+	margin-top: 200px;
+	width: 526px;
+	height: auto;
+	float: right;
+}
+
+.imageRéglement1
+{
+	width: 526px;
+	height: 441.5px;
+	border-radius: 10px;
+}
+
+.imageRéglement2
+{
+	margin-top: 20px;
+	width: 526px;
+	height: 441.5px;
+	border-radius: 10px;
+}
+
+.all3, .all4
+{
+	width: 1150px;
+	height: 850px;
+	margin: 0 auto;
+}
+
+.boxtext4>h1 ,.boxtext5>h1
+{
+	text-align: center;
+}
+
+.boxtext4
+{
+	width: 49%;
+	height: auto;
+	float: right;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.imageRègle1
+{
+	float: left;
+	width: 529px;
+	margin-top: 90px;
+	border-radius: 10px;
+}
+
+
+
+#Champions
+{
+	width: 180px;
+	margin: 0 auto;
+	font-size: 2em;
+	text-align: center;
+	background-image: url("Wallpapers/imagefont.jpg");
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.section4
+{
+	width: 1150px;
+	height: auto;
+	margin: 100px auto;
+}
+
+.boxtext5
+{
+	width: 49%;
+	height: auto;
+	margin-top: 100px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.i2
+{
+	width: 526px;
+	height: auto;
+	float: right;
+}
+
+.imagechampion1
+{
+	width: 526px;
+	height: auto;
+	border-radius: 10px;
+}
+.imagechampion2, .imagechampion3
+{
+	margin-top: 20px;
+	width: 526px;
+	height: auto;
+	border-radius: 10px;
+}
+
+
+
+

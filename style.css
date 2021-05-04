@@ -1,0 +1,309 @@
+/* Page d'Adrien */
+
+/* On défini les grandes spécificité de la page dans le body */
+body
+{
+	background-color: #ECECEC;
+	background-image: url("Wallpapers/wallpaper.jpg");
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	width: auto;
+	height: auto;
+	scroll-behavior: smooth;
+	font-family: "Open Sans";
+}
+
+.Connexion>a>p
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: white;
+	font-family: "Open Sans";
+	float: left;
+	background-image: linear-gradient(120deg , #018AFE , #DB01FE);
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+/* On place le text "Accueil" au milieu avec décalement de marge extérieur
+exprimer en % pour s'adapter à tous les moniteurs */
+.Accueil
+{
+	margin-top: 20%;
+}
+
+/* On défini les particularité en terme de taille de police, l'animation...
+ pour le text "Accueil" */
+.Accueil>h1
+{
+	font-size: 4em;
+	text-align: center;
+	font-family: 'Coalition' ;
+	background-image: url("Wallpapers/imagefont.jpg");
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	animation: 3s text;
+}
+/* On va faire l'animation du titre ACCUEIL en terme d'opacité, de taille et d'espacement des lettres. */
+@keyframes text {
+	0%{
+		opacity: 0;
+		letter-spacing:15px;
+		font-size: 5em;
+	}
+	30%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 1;
+		letter-spacing: 0px;
+		font-size: 4em;
+	}
+}
+
+/* CSS pour les boutons, on défini les particularités communes
+a tous les boutons(avec animations aussi) */
+button
+{
+	font-size: 1em;
+	font-weight: bold;
+	font-family: 'Open Sans';
+	background: none;
+	height: 20 px;
+	color: black;
+	border: none;
+	animation: 3s Text;
+	/*border: 2px solid white; /* Les virgules pour cette superproriété buggaient le truc donc pas de virgule */
+	/*border-radius: 4px; */
+}
+/* Le truc sympa l'animation d'arrivé sur la page on défini les paramètres
+d'opacité pour faire apparaître les bouttons en alignement horizontal ET vertical */
+@keyframes Text
+{
+	0%
+	{
+		opacity: 0;
+	}
+	50%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+/* On modifier des propriétés au survol des boutons */
+button:hover
+{
+	filter: blur(0.6px);
+}
+/* On fait de même mais au clic */
+button:focus
+{
+	background-image: url("Wallpapers/imagefont.jpg");
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+/* Les bouttons sont dans un div pour pouvoir les centrer comme indiquer ici */
+.raccourcisaccueil
+{
+	width: 380px;
+	margin:0 auto;
+}
+
+
+/* Maintenant c'est bien beau d'avoir des bouttons dans l'accueil mais
+tous le monde les veux aussi tout au long de la page. Au lieu de faire
+un header fixe ou sticky on va faire des boutton sur le côté ce sera
+plus propre et plus jolie, ici on défini les propriétés de toute la liste*/
+ul {
+  list-style-type: none;
+	right: 0;
+	top: 30%;
+	bottom:70%;
+	margin-right: 60px;
+	text-align: right;
+  width: 100px;
+  background-color: none;
+	position:fixed;
+	animation: 3s Text;
+}
+/*barre de navigation vertical*/
+/*
+ul::after
+{
+	content: "";
+	position: fixed;
+	width: 3px;
+	height: 175px;
+	left: 8.1%;
+	margin-top: -15%;
+	background: red;
+	margin-left: 90%;
+	z-index: -1;
+}
+*/
+
+/* code pour les points de la bare de navigation vertical*/
+li a::before
+{
+	content: "";
+	position: fixed;
+	background: none;
+	width: 20px;
+	height: 20px;
+	right: 0;
+	margin-right: 20px;
+	border-radius: 50px;
+	border: 3px solid black;
+	/*border-image-source: conic-gradient(magenta,red, orange);
+	border-image-slice: 5;(J'aurais bien aimé mais incompatible avec border radius)*/
+	/* ça aussi j'aurais bien voulu mais le même problème
+	border-image-source: url("imagefont.jpg");
+	border-image-slice: 1;*/
+}
+/* De même on indique les particularités des balises li suivit de a,
+soit tous simplement les bouttons */
+li a {
+	font-weight: bold;
+	font-family: 'Open Sans';
+  display: block;
+  color: #000;
+  padding: 20px 0;
+  text-decoration: none;
+}
+
+/* Ici on effectue des changements similaires au survol que les bouttons avec la balise
+balise boutton pour être en accord avec leur fonction identique */
+li a:hover {
+	background-image: url("Wallpapers/imagefont.jpg");
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+/* Ici le code est redondant ce qui est problématique mais il permet
+d'afficher le texte quand le curseur est sur un bouton ou sur la box
+du texte qui est pas visible */
+.buttonrond1>span{
+	display: none;
+}
+.buttonrond1:hover>span{
+	display: block;
+}
+
+.buttonrond2>span{
+	display: none;
+}
+.buttonrond2:hover>span{
+	display: block;
+}
+
+.buttonrond3>span{
+	display: none;
+}
+.buttonrond3:hover>span{
+	display: block;
+}
+
+.buttonrond4>span{
+	display: none;
+}
+.buttonrond4:hover>span{
+	display: block;
+}
+
+
+
+/* On défini les paramètres générales de la section Actualités tel que sa position
+(en dessous du titre accueil) plus l'alignement du texte générale et sa couleur.  */
+.section1
+{
+	width: auto;
+	height: auto;
+	margin-top:55%;
+	/*background-color: #EFEFEF;*/
+	color: black;
+	text-align: justify;
+}
+/* Ici le titre Actualités à besoin d'être centré et je voulais mettre une image
+de fond pour améliorer son disgn :) */
+#Actualités
+{
+	font-size: 2em;
+	text-align: center;
+	background-image: url("Wallpapers/imagefont.jpg");
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+/* J'ai créé une div centrer pour l'image et le text de la partie Actualités
+et ce pour un soucis d'adaptabilité. */
+.all1
+{
+	width: 1150px;
+	margin: 100px auto;
+	height: auto;
+}
+/* On défini les paramètres de l'image en lui indiquant de floater dans la div avec bien sur des particularités */
+.imageactu
+{
+	width: 534px;
+	height: 300px;
+	float: right;
+	margin-top: 120px;
+	border-radius: 10px;
+}
+/* Ici outre la largueur de la box ce n'est que du disgn */
+.boxtext
+{
+	width: 49%;
+	height: auto;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+
+/* On recopie les paramètres de section1 pour les mettre ici à par le margin-top  */
+.section2
+{
+	width: auto;
+	height: auto;
+	margin-top: 200px;
+	color: black;
+	text-align: justify;
+}
+/* Ce titre à lui aussi besoin d'être modifié. Cela n'est pas optimisé et est à l'être. */
+.section2>h1
+{
+	font-size: 2em;
+	text-align: center;
+	background-image: url("Wallpapers/imagefont.jpg");
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+/* Ici on a des paramètres sensiblement semblable à ceux de la première boxtext. */
+.boxtext2
+{
+	width: 1150px;
+	height: auto;
+	margin: 100px auto;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+
+
+/* Fin */

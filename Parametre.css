@@ -1,0 +1,148 @@
+body
+{
+  background-color: #ECECEC;
+  width: auto;
+	height: auto;
+	scroll-behavior: smooth;
+	font-family: "Open Sans";
+}
+
+#All-form , #div_autrecompte
+{
+  width: 1150px;
+  margin: 50px auto;
+}
+
+.Inscrit_Bienvenue , .Admin_Bienvenue
+{
+  width: auto;
+  height: 50px;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  background-image: url("Wallpapers/imagefont.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.form-Parametre , .form-Actualité , .form-autrecompte , .form-delete
+{
+  height: auto;
+  background-color: #ECECEC;
+  padding: 60px 40px;
+  border-radius: 20px;
+
+}
+
+.form-Parametre>h1 , .form-Actualité>h1 , .form-autrecompte>h1 , .form-delete>h1
+{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.input_modifier
+{
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 30px 0;
+}
+
+.input_modifier input
+{
+  font-size: 15px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+
+.input_modifier span::before
+{
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: black;
+  transform: translateY(-50%);
+  transition: .5s;
+
+}
+
+.input_modifier span::after
+{
+  content: '';
+  width: 0%;
+  left: 0;
+  bottom: -2px;   /* Et merci Chrome qui ne sait pas placer cette forme au bon endroit (modifcation pour que chrome le place au bon endroit) */
+  height: 2px;
+  position: absolute;
+  background-color: black;
+  transition: .5s;
+}
+
+.focus + span::before
+{
+  top: -5px;
+}
+.focus + span::after
+{
+  width: 100%;
+}
+
+
+.btnModifier
+{
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  border: none;
+  background-image: linear-gradient(120deg , #ECECEC , #B9B9B9);
+  background-size: 200%;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.btnModifier:hover
+{
+  background-position: right;
+}
+
+
+.form-Parametre
+{
+  width: 360px;
+  float: left;
+}
+
+.form-Actualité
+{
+  width: 600px;
+  float: right;
+}
+
+.form-autrecompte
+{
+  margin: 0 auto;
+  width: 360px;
+}
+
+.form-delete
+{
+  margin: 0 auto;
+  width: 360px;
+}
+
+
+.textarea
+{
+  background-color: #ECECEC;
+  border: none;
+}

@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 nov. 2019, 13:24:24
+    Author     : a.masvidal
+*/
+
+/* On commence par rÃ©gler les options gÃ©nÃ©rales du footer tel que le positionnement de l'image de fond pour
+qu'elle soit fixe et s'adapte Ã  la taille du footer */
+	footer
+	{
+		background-image: url("Wallpapers/imagefont.jpg");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		margin-top: 300px;
+		width: auto;
+		height:auto;
+	}
+/* On paramÃ¨tre maintenant toutes les div inbriquÃ© pour faire en sorte qu'elles soient cÃ´te Ã  cÃ´te,
+donc la taille si on les dÃ©finies comme floattantes... */
+	.ContactUS
+	{
+		width: 900px;
+		height:250px;
+		margin: 0 auto;
+		color: white;
+	}
+	.ContactUS-l
+	{
+		float: left;
+		width: 560px;
+
+	}
+	.Réseauxsociaux
+	{
+		padding-top: 100px;
+		margin-left: 600px;
+
+	}
+	.logo
+	{
+		float: left;
+		width: 50px;
+		height: auto;
+		margin-left: 20px;
+		margin-top: 20px;
+
+	}
+	.pngmaps , .pngtel , .pngemail1 , .pngemail2 , .facebookimg , .twitterimg , .instagramimg , .youtubeimg
+	{
+		width: 50px;
+		height: 50px;
+		border-radius: 100%;
+	}
+	.pngmaps:hover , .facebookimg:hover , .twitterimg:hover , .instagramimg:hover , .youtubeimg:hover
+	{
+		width: 60px;
+		height: 60px;
+	}
+	.logotext
+	{
+		width: 450px;
+		margin-left: 100px;
+		margin-top: 35px;
+		font-size: 1.25em;
+
+	}
+	.allright
+	{
+		margin: 0 auto;
+		width: auto;
+		height: auto;
+		color: white;
+
+	}
+
+	.allright>p
+	{
+		text-align: center;
+	}

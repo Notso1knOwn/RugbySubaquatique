@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 20 nov. 2019, 14:02:30
+    Author     : a.masvidal
+*/
+
+
+/* Maintenant c'est bien beau d'avoir des bouttons dans l'accueil mais
+tous le monde les veux aussi tout au long de la page. Au lieu de faire
+un header fixe ou sticky on va faire des boutton sur le côté ce sera
+plus propre et plus jolie, ici on défini les propriétés de toute la liste*/
+.Connexion
+{
+  width: 170px;
+  height: 50px;
+  line-height: 14px;
+  white-space: nowrap;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.IconConnexion
+{
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+/* code pour les points de la bare de navigation vertical*/
+.btnv>li a::before
+{
+	content: "";
+	position: fixed;
+	background: none;
+	width: 20px;
+	height: 20px;
+	right: 0;
+	margin-right: 20px;
+	border-radius: 50px;
+	border: 3px solid black;
+        /*border-image-source: conic-gradient(magenta,red, orange);
+	border-image-slice: 5;(J'aurais bien aimé mais incompatible avec border radius)*/
+	/* ça aussi j'aurais bien voulu mais le même problème
+	border-image-source: url("imagefont.jpg");
+	border-image-slice: 1;*/
+}
+
+.btnv>li a {
+	font-weight: bold;
+	font-family: 'Open Sans';
+        display: block;
+        color: #000;
+        padding: 20px 0;
+        text-decoration: none;
+}
+
+/* Ici on effectue des changements similaires au survol que les bouttons avec la balise
+balise boutton pour être en accord avec leur fonction identique */
+.btnv>li a:hover {
+	background-image: url("Wallpapers/imagefont.jpg");
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+/* Ici le code est redondant ce qui est problématique mais il permet
+d'afficher le texte quand le curseur est sur un bouton ou sur la box
+du texte qui est pas visible */
+.buttonrond1>span , .buttonrond2>span , .buttonrond3>span , .buttonrond4>span{
+	display: none;
+}
+.buttonrond1:hover>span , .buttonrond2:hover>span , .buttonrond3:hover>span , .buttonrond4:hover>span {
+	display: block;
+}
